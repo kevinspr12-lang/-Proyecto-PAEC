@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Estructura con Columnas</title>
+    <style>
+        header{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(0, 157, 255);
+                padding: 10px 20px;
+            }
+            .barra-navegacion{
+                display: flex;
+                gap: 15px;
+                margin-top: 10px;
+
+
+            }
+            .logo-pequeno{
+                width: 50px;
+                height: auto;
+                display: block;
+            }
+            .logo-cabecera{
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: bottom 15px;
+                /*titulo y imagen*/
+            }
+            main{
+                display: flex;
+                gap: 20px;
+            }
+
+
+            aside{
+                width: 25%;
+                background-color: rgb(79, 108, 211);
+                padding: 3%;
+            }
+
+
+            section{
+                width: 75%;
+                background-color: rgb(74, 122, 153);
+                padding: 15px;
+            }
+            .boton-nav {
+                text-decoration: none;
+                color:rgb(0, 0, 0);
+                background-color: rgb(0, 26, 255);
+                padding: 6px 12px;
+                border-radius: 4px;
+                font-size: 14px;
+                font-family: sans-serif;
+                transition: background-color 0.3s;
+
+            }
+            .boton-nav:hover{
+                background-color: red (245,148,1);
+                color: rgb(26, 255, 251);
+            }
+
+            .boton-nav.activo{
+                background-color: rgb(53, 65, 245);
+                color: none;
+                font-weight: bold;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin: 0";>Mi Sitio Web</h1>
+                <nav class="barra-navegacion">
+                <a href="index.html" class="boton-nav activo">(inicio)</a>
+                <a href="K2.html" class="boton-nav activo">(Sección de adopción)</a>
+                <a href="K3.html" class="boton-nav activo">(Sección de suministros)</a>
+        </div>
+        <img src="https://unamglobal.unam.mx/wp-content/uploads/2025/08/GATO_UNAM-1024x768.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="200" height="200">
+    </header>
+    <main>
+        <aside>
+        <img src="https://i.pinimg.com/236x/87/62/57/8762571a249116fd9b28f48f22bda12c.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="1200" height="1200">
+        </aside>
+        <section>
+            <article>
+                <h2>Mascotas Disponibles</h2>
+                <div class="grid-mascotas">
+                    <!-- Ficha 1 -->
+                    <div class="tarjeta-mascota">
+                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=500&q=80" alt="Perro en adopción">
+                        <div class="info-mascota">
+                            <h3>Max</h3>
+                            <span class="etiqueta">Macho • 2 años</span>
+                            <p><strong>Raza:</strong> Mestizo (Tamaño mediano)</p>
+                            <p><strong>Carácter:</strong> Enérgico, juguetón y muy amigable con los niños.</p>
+                            <a href="#" class="boton-adoptar">Quiero Adoptar</a>
+                        </div>
+                    </div>
+
+                    <!-- Ficha 2 -->
+                    <div class="tarjeta-mascota">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=500&q=80" alt="Gato en adopción">
+                        <div class="info-mascota">
+                            <h3>Luna</h3>
+                            <span class="etiqueta">Hembra • 1 año</span>
+                            <p><strong>Raza:</strong> Doméstico de pelo corto</p>
+                            <p><strong>Carácter:</strong> Tranquila, le encanta tomar el sol y los mimos suaves.</p>
+                            <a href="#" class="boton-adoptar">Quiero Adoptar</a>
+                        </div>
+                    </div>
+
+                    <!-- Ficha 3 -->
+                    <div class="tarjeta-mascota">
+                        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=500&q=80" alt="Perro Golden Retriever en adopción">
+                        <div class="info-mascota">
+                            <h3>Rocky</h3>
+                            <span class="etiqueta">Macho • 3 años</span>
+                            <p><strong>Raza:</strong> Mezcla de Golden Retriever</p>
+                            <p><strong>Carácter:</strong> Muy obediente, sociable y le encanta salir a pasear.</p>
+                            <a href="#" class="boton-adoptar">Quiero Adoptar</a>
+                        </div>
+                    </div>
+
+                    <!-- Ficha 4 -->
+                    <div class="tarjeta-mascota">
+                        <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=500&q=80" alt="Gato atigrado en adopción">
+                        <div class="info-mascota">
+                            <h3>Mimi</h3>
+                            <span class="etiqueta">Hembra • 5 meses</span>
+                            <p><strong>Raza:</strong> Atigrada</p>
+                            <p><strong>Carácter:</strong> Curiosa, activa y convive muy bien con otros gatos.</p>
+                            <a href="#" class="boton-adoptar">Quiero Adoptar</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+</body>
+
+</html>

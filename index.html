@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Estructura con Columnas</title>
+    <style>
+        header{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(145, 255, 0);
+                padding: 10px 20px;
+            }
+            .barra-navegacion{
+                display: flex;
+                gap: 15px;
+                margin-top: 10px;
+
+
+            }
+            .logo-pequeno{
+                width: 50px;
+                height: auto;
+                display: block;
+            }
+            .logo-cabecera{
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: bottom 15px;
+                /*titulo y imagen*/
+            }
+            main{
+                display: flex;
+                gap: 20px;
+            }
+
+
+            aside{
+                width: 25%;
+                background-color: rgb(165, 255, 117);
+                padding: 3%;
+            }
+
+
+            section{
+                width: 75%;
+                background-color: rgb(228, 251, 52);
+                padding: 7px;
+            }
+            .boton-nav {
+                text-decoration: none;
+                color:rgb(0, 0, 0);
+                background-color: rgb(0, 255, 115);
+                padding: 6px 12px;
+                border-radius: 4px;
+                font-size: 14px;
+                font-family: sans-serif;
+                transition: background-color 0.3s;
+
+            }
+            .boton-nav:hover{
+                background-color: red (245,148,1);
+                color: rgb(77, 53, 255);
+            }
+
+            .boton-nav.activo{
+                background-color: rgb(200, 255, 128);
+                color: none;
+                font-weight: bold;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin: 0";>Mi Sitio Web</h1>
+                <nav class="barra-navegacion">
+                <a href="index.html" class="boton-nav activo">(inicio)</a>
+                <a href="K2.html" class="boton-nav activo">(Sección de adopción)</a>
+                <a href="K3.html" class="boton-nav activo">(Sección de suministros)</a>
+        </div>
+        <img src="https://unamglobal.unam.mx/wp-content/uploads/2025/08/GATO_UNAM-1024x768.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="200" height="200">
+    </header>
+    <main>
+        <aside>
+        <img src="https://template.canva.com/EAGlfrwhKAU/1/0/900w-Yhzi1Rl8r3w.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="1200" height="1200">
+        </aside>
+        <section>
+            <article>
+                <h2>PAEC</h2>
+                <p>Aqui en el proyecto PAEC, promovemos el cuidado y la salub de los animales en adopcion, con este proyecto haremos que mas animales puedan ser adoptados y que tengan un buen lugar para vivir y donde sea apreciado por una buena familia.</p>
+        <img src="https://www.laclinicaveterinaria.com/wp-content/uploads/2022/09/Pautas-para-la-adopcion-de-mascotas.webp" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="600" height="200">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+</body>
+
+</html>

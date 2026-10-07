@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sección de Suministros</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 149, 0);
+            padding: 10px 20px;
+        }
+
+        .barra-navegacion {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .logo-pequeno {
+            width: 50px;
+            height: auto;
+            display: block;
+        }
+
+        .logo-cabecera {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        aside {
+            width: 25%;
+            background-color: rgb(237, 167, 16);
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 75%;
+            background-color: rgb(227, 125, 53);
+            padding: 20px;
+            box-sizing: border-box;
+            color: #1a1a1a;
+            font-family: sans-serif;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 228, 72);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        .boton-nav:hover {
+            background-color: rgb(245, 148, 1);
+            color: rgb(255, 255, 255);
+        }
+
+        .boton-nav.activo {
+            background-color: rgb(255, 44, 21);
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Estilos mejorados para las donaciones */
+        .contenedor-acopio {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ff2c15;
+        }
+
+        .lista-necesidades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .categoria-donacion {
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: 12px;
+            border-radius: 6px;
+        }
+
+        .categoria-donacion h4 {
+            margin-top: 0;
+            color: #8b0000;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 4px;
+        }
+
+        .categoria-donacion ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        footer {
+            background-color: rgb(255, 149, 0);
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin: 0;">Mi Sitio Web</h1>
+            <nav class="barra-navegacion">
+                <a href="index.html" class="boton-nav">(Inicio)</a>
+                <a href="K2.html" class="boton-nav">(Sección de adopción)</a>
+                <a href="K3.html" class="boton-nav activo">(Sección de suministros)</a>
+            </nav>
+        </div>
+        <img src="https://unamglobal.unam.mx/wp-content/uploads/2025/08/GATO_UNAM-1024x768.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="200" height="200">
+    </header>
+
+    <main>
+        <aside>
+            <img src="https://i.pinimg.com/236x/87/62/57/8762571a249116fd9b28f48f22bda12c.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera" width="1200" height="1200">
+        </aside>
+
+        <section>
+            <article>
+                <h2>Centro de Acopio y Donación de Suministros</h2>
+                <p>Tu apoyo es muy importante para la atención de nuestros rescatados. A continuación te detallamos la información del centro de recolección y la lista de artículos requeridos.</p>
+
+                <!-- Información del Centro de Acopio -->
+                <div class="contenedor-acopio">
+                    <h3>📍 Información del Centro de Acopio</h3>
+                    <p><strong>Ubicación:</strong> Av. Principal #123, Col. Centro, Ciudad Esperanza</p>
+                    <p><strong>Fechas de Recepción:</strong> Del 10 al 25 del mes en curso</p>
+                    <p><strong>Horarios:</strong> Lunes a Sábado de 09:00 hrs a 18:00 hrs</p>
+                    <p><strong>Teléfono de Contacto:</strong> (555) 123-4567</p>
+                </div>
+
+                <!-- Lista de Necesidades -->
+                <h3>📋 Lista de Necesidades Prioritarias</h3>
+                <div class="lista-necesidades">
+                    <div class="categoria-donacion">
+                        <h4> Alimentos</h4>
+                        <ul>
+                            <li>Croquetas para perro (cachorro y adulto)</li>
+                            <li>Croquetas para gato (cachorro y adulto)</li>
+                            <li>Comida enlatada o sobres húmedos</li>
+                            <li>Leche maternizada en polvo para cachorro</li>
+                        </ul>
+                    </div>
+
+                    <div class="categoria-donacion">
+                        <h4> Abrigado y Confort</h4>
+                        <ul>
+                            <li>Cobijas y mantas en buen estado</li>
+                            <li>Toallas limpias</li>
+                            <li>Camas o colchonetas pequeñas/medianas</li>
+                            <li>Ropa térmica para mascotas</li>
+                        </ul>
+                    </div>
+
+                    <div class="categoria-donacion">
+                        <h4> Artículos de Limpieza</h4>
+                        <ul>
+                            <li>Cloro y desinfectantes multisuperficies</li>
+                            <li>Detergente en polvo o líquido</li>
+                            <li>Jabón para trastes y cepillos</li>
+                            <li>Bolsas para basura (tamaño grande)</li>
+                            <li>Jergas y franelas</li>
+                        </ul>
+                    </div>
+
+                    <div class="categoria-donacion">
+                        <h4> Higiene y Médicos</h4>
+                        <ul>
+                            <li>Arena para gato</li>
+                            <li>Pañales entrenadores / Tapetes absorbentes</li>
+                            <li>Gasas, alcohol y agua oxigenada</li>
+                            <li>Jabón/Champú antipulgas</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+</body>
+
+</html>
